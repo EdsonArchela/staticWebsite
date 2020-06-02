@@ -4,7 +4,7 @@ import {
   FaFacebook,
   FaTwitter,
   FaPinterest,
-  FaInstagram,
+  FaStar,
 } from 'react-icons/fa';
 import Button from '../Button';
 import { Container, Connect } from './styles';
@@ -30,7 +30,8 @@ const Card: React.FC<CardProps> = ({ children, post, ...rest }) => (
     <Connect>
       <div className="info">
         <p>Maio 10, 2020</p>
-        <FaComment /> <span>1</span>
+        <FaComment /> <span>0</span>
+        <FaStar /> <span>0</span>
       </div>
       <div className="social">
         <FaFacebook />

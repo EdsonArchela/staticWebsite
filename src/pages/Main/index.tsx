@@ -1,20 +1,10 @@
 import React, { useState } from 'react';
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import {
-  Container,
-  Header,
-  HeaderContent,
-  Social,
-  Fotter,
-  Body,
-  MenuBar,
-  Posts,
-} from './style';
+import { Container, Fotter, Body, Posts } from './style';
 import Button from '../../components/Button';
 import logoManhattan from '../../assets/logo-manhattan.png';
 import logoXP from '../../assets/xp-investimentos-logo.svg';
 import Card from '../../components/Card';
+import Header from '../../components/Header';
 
 const Main: React.FC = () => {
   const [post, setPost] = useState({
@@ -26,42 +16,9 @@ const Main: React.FC = () => {
 
   return (
     <Container>
-      <Header>
-        <HeaderContent>
-          <Social>
-            <a href="#">
-              <FaFacebookF />
-            </a>
-            <a href="#">
-              <FaInstagram />
-            </a>
-            <a href="#">
-              <FaLinkedinIn />
-            </a>
-          </Social>
-          <div className="header-principal">
-            <strong>Edson Archela</strong>
-            <span>Acessor de Investimentos - XP Investimentos</span>
-          </div>
-          <div>
-            <Button>Inscreva-se</Button>
-          </div>
-        </HeaderContent>
-      </Header>
+      <Header />
+
       <Body>
-        <MenuBar>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/">Contate-me</Link>
-            </li>
-            <li>
-              <Link to="/">Sobre mim</Link>
-            </li>
-          </ul>
-        </MenuBar>
         <section className="MainPost">
           <div className="content">
             <h1>O que faz um Assessor de Investimentos?</h1>

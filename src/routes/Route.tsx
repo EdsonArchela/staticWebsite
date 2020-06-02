@@ -1,3 +1,26 @@
+// import React from 'react';
+// import {
+//   Route as ReactDOMRoute,
+//   RouteProps as ReactDOMRouteProps,
+// } from 'react-router-dom';
+
+// interface RouteProps extends ReactDOMRouteProps {
+//   isPrivate?: boolean;
+//   component: React.ComponentType;
+// }
+
+// const Route: React.FC<RouteProps> = ({ component: Component, ...rest }) => {
+//   return (
+//     <ReactDOMRoute
+//       {...rest}
+//       render={() => {
+//         return <Component />;
+//       }}
+//     />
+//   );
+// };
+// export default Route;
+
 import React from 'react';
 import {
   Route as ReactDOMRoute,
@@ -21,16 +44,16 @@ const Route: React.FC<RouteProps> = ({
     <ReactDOMRoute
       {...rest}
       render={({ location }) => {
-        return isPrivate === !!user ? (
-          <Component />
-        ) : (
-          <Redirect
-            to={{
-              pathname: isPrivate ? '/' : '/dashboard',
-              state: { from: location },
-            }}
-          />
-        );
+        let component;
+        if (isPrivate && user && user.admin) {
+          component = <Component />;
+        }
+        if (isPrivate && (!user || !user.admin)) {
+          component = (
+            <Redirect to={{ pathname: '/signin', state: { from: location } }} />
+          );
+        } else component = <Component />;
+        return component;
       }}
     />
   );
