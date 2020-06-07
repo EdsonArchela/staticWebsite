@@ -55,14 +55,3 @@ export const Posts = styled.section`
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 `;
-
-export const Fotter = styled.footer`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  img {
-    margin: 20px;
-    width: 200px;
-  }
-`;

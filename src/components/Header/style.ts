@@ -1,8 +1,22 @@
 import styled from 'styled-components';
-import backgroundImage from '../../assets/main-post-background.jpg';
 
 export const Container = styled.header`
   padding: 32px 0 0 0;
+`;
+
+export const HeaderLogos = styled.div`
+  width: 100vw;
+  background: black;
+  margin: auto;
+  .header-logo-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      height: 60px;
+    }
+  }
 `;
 
 export const HeaderContent = styled.div`
@@ -28,13 +42,21 @@ export const HeaderContent = styled.div`
     }
   }
 
-  button {
+  .OpenAccount {
     margin-left: auto;
     background: transparent;
-    color: #000000;
-    border-color: #dedede;
-    border-width: 1px;
-    border-style: solid;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    padding: 10px 20px;
+    color: black;
+    width: 100%;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+    font-family: 'Montserrat', sans-serif;
+    &:hover {
+      background: #9ba78a;
+      color: white;
+    }
   }
 `;
 
@@ -62,6 +84,9 @@ export const Social = styled.div`
 
 export const MenuBar = styled.nav`
   padding: 30px 0;
+  margin: auto;
+  max-width: 1120px;
+
   ul {
     display: flex;
     align-items: center;
@@ -77,6 +102,7 @@ export const MenuBar = styled.nav`
     a {
       font-size: 18px;
       color: black;
+      font-family: 'Montserrat', sans-serif;
       transition: color 0.2s;
       &:hover {
         color: #9ba78a;
