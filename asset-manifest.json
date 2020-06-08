@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/staticWebsite/static/js/main.2b068db0.chunk.js",
+    "main.js.map": "/staticWebsite/static/js/main.2b068db0.chunk.js.map",
+    "runtime-main.js": "/staticWebsite/static/js/runtime-main.35aae272.js",
+    "runtime-main.js.map": "/staticWebsite/static/js/runtime-main.35aae272.js.map",
+    "static/js/2.352618be.chunk.js": "/staticWebsite/static/js/2.352618be.chunk.js",
+    "static/js/2.352618be.chunk.js.map": "/staticWebsite/static/js/2.352618be.chunk.js.map",
+    "index.html": "/staticWebsite/index.html",
+    "precache-manifest.13d425f115fc58d7d1a3ae0115342fca.js": "/staticWebsite/precache-manifest.13d425f115fc58d7d1a3ae0115342fca.js",
+    "service-worker.js": "/staticWebsite/service-worker.js",
+    "static/js/2.352618be.chunk.js.LICENSE.txt": "/staticWebsite/static/js/2.352618be.chunk.js.LICENSE.txt",
+    "static/media/OK8NAL0.jpg": "/staticWebsite/static/media/OK8NAL0.f202f9de.jpg",
+    "static/media/image.jpg": "/staticWebsite/static/media/image.e01940f8.jpg",
+    "static/media/logo-mht.png": "/staticWebsite/static/media/logo-mht.b97ec13c.png",
+    "static/media/logo-xpi.svg": "/staticWebsite/static/media/logo-xpi.b8fe48b5.svg",
+    "static/media/main-post-background.jpg": "/staticWebsite/static/media/main-post-background.e53ab4eb.jpg",
+    "static/media/xp-investimentos-logo.svg": "/staticWebsite/static/media/xp-investimentos-logo.3b782706.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35aae272.js",
+    "static/js/2.352618be.chunk.js",
+    "static/js/main.2b068db0.chunk.js"
+  ]
+}
