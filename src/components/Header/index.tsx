@@ -67,7 +67,7 @@ const Header: React.FC = () => {
             <a
               className="OpenAccount"
               href="http://www.xpi.com.br/aai/#/passo/1?assessor-A24771"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Abra sua conta
