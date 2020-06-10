@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d099230758078dfea43aa2ce95d4eaa",
+    "revision": "8d939aae94a5f5dbffbe79632f04c87b",
     "url": "/staticWebsite/index.html"
   },
   {
-    "revision": "150fa5b4aaf064440a34",
-    "url": "/staticWebsite/static/js/2.61dafe9c.chunk.js"
+    "revision": "8a1079b56cb6d469a677",
+    "url": "/staticWebsite/static/js/2.b70b49c5.chunk.js"
   },
   {
     "revision": "643efbae9d6e0fbba269bfc7ee232ed1",
-    "url": "/staticWebsite/static/js/2.61dafe9c.chunk.js.LICENSE.txt"
+    "url": "/staticWebsite/static/js/2.b70b49c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c452aa821aa86bbe1077",
-    "url": "/staticWebsite/static/js/main.0f25eea7.chunk.js"
+    "revision": "493dd27b8f9aa0e426ca",
+    "url": "/staticWebsite/static/js/main.852e4def.chunk.js"
   },
   {
     "revision": "9f9b6e9964da9b28b071",
@@ -36,8 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/staticWebsite/static/media/image.e01940f8.jpg"
   },
   {
-    "revision": "b97ec13c842bb3db9188f1edcbfdab76",
-    "url": "/staticWebsite/static/media/logo-mht.b97ec13c.png"
+    "revision": "2bef2387b7a7a23ab2ec3711420a93f4",
+    "url": "/staticWebsite/static/media/logo-manhattan.2bef2387.svg"
+  },
+  {
+    "revision": "14eb51f1fc4f085fada2bc32da6009c8",
+    "url": "/staticWebsite/static/media/logo-school.14eb51f1.jpg"
   },
   {
     "revision": "b8fe48b57010c9aa5c280303aa6b5e63",
