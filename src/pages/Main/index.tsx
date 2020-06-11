@@ -1,19 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
+
 import { Container, Body, Posts } from './style';
 import Button from '../../components/Button';
 import Card from '../../components/Card';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import { posts as postsList } from '../../assets/articles/index';
+
+interface Post {
+  folder: string;
+  image: string;
+  title: string;
+  description: string;
+  date: string;
+}
 
 const Main: React.FC = () => {
   const history = useHistory();
-  const [post, setPost] = useState({
-    image: 'teste',
-    title: 'First Post',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis risus at purus consectetur, sed iaculis turpis lacinia. Mauris dictum facilisis ex quis dapibus. Duis id lorem laoreet, sagittis sem.',
-  });
+  const posts: Post[] = postsList;
 
   const routeChange = (path: string): void => {
     history.push(path);
@@ -36,21 +41,20 @@ const Main: React.FC = () => {
               <div>
                 <Button
                   onClick={() => {
-                    routeChange('/articles/assessor-investimentos');
+                    routeChange('/article/assessor-investimentos');
                   }}
                 >
                   LEIA MAIS
                 </Button>
               </div>
             </div>
-            <div />
+            <div className="empty" />
           </section>
 
           <Posts>
-            <Card post={post} />
-            <Card post={post} />
-            <Card post={post} />
-            <Card post={post} />
+            {posts.map((_post) => {
+              return <Card post={_post} key={_post.folder} />;
+            })}
           </Posts>
         </Body>
         <Footer />

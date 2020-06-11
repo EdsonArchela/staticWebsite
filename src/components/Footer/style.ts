@@ -20,6 +20,11 @@ export const Container = styled.footer`
       color: #68686d;
     }
   }
+  @media only screen and (max-width: 600px) {
+    .logos-container {
+      flex-direction: column;
+    }
+  }
 `;
 
 export const Social = styled.div`
@@ -74,5 +79,8 @@ export const MenuBar = styled.nav`
         color: #9ba78a;
       }
     }
+  }
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 `;

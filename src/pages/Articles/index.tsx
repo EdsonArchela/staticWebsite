@@ -1,18 +1,31 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import Article from '../../components/Article';
-import { Container } from './style';
+import { Container, Posts } from './style';
+import { posts as postsList } from '../../assets/articles/index';
+import Card from '../../components/Card';
+
+interface Post {
+  folder: string;
+  image: string;
+  title: string;
+  description: string;
+  date: string;
+}
 
 const Articles: React.FC = () => {
+  const posts: Post[] = postsList;
   return (
     <>
       <Header />
       <Container>
-        <Article />
+        <Posts>
+          {posts.map((_post) => {
+            return <Card post={_post} key={_post.folder} />;
+          })}
+        </Posts>
+        <Footer />
       </Container>
-      <Footer />
     </>
   );
 };

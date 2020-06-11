@@ -4,6 +4,9 @@ export const Container = styled.div`
   max-width: 1120px;
   padding: 0 30px 0 30px;
   margin: auto;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const Body = styled.div`
@@ -29,13 +32,16 @@ export const Body = styled.div`
       text-align: justify;
       margin-bottom: 10px;
     }
-    button {
-      max-width: 400px;
-      background: #ededed;
-      font-size: 20px;
-      &:hover {
-        background: #9ba78a;
-        color: white;
+  }
+  @media only screen and (max-width: 600px) {
+    .content {
+      padding: 1px !important;
+      h1 {
+        width: 100%;
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
       }
     }
   }

@@ -8,9 +8,10 @@ import {
   MenuBar,
   HeaderLogos,
 } from './style';
-import WhiteMht from '../../assets/logo-mht.png';
-import WhiteG20 from '../../assets/logo-g20.png';
+import WhiteMht from '../../assets/logo-manhattan.svg';
+import WhiteSchool from '../../assets/logo-school-.png';
 import WhiteXpi from '../../assets/logo-xpi.svg';
+import TradingViewTape from '../TradingViewTape';
 
 const Header: React.FC = () => {
   return (
@@ -24,7 +25,13 @@ const Header: React.FC = () => {
           >
             <img src={WhiteMht} alt="Manhattan Investimentos" />
           </a>
-          <img src={WhiteG20} alt="Manhattan Investimentos" />
+          <a
+            href="https://mhtis.com.br/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src={WhiteSchool} alt="Manhattan Investiment School" />
+          </a>
           <a
             href="https://www.xpi.com.br/"
             rel="noopener noreferrer"
@@ -34,6 +41,7 @@ const Header: React.FC = () => {
           </a>
         </div>
       </HeaderLogos>
+      <TradingViewTape />
       <Container>
         <HeaderContent>
           <Social>
@@ -61,12 +69,12 @@ const Header: React.FC = () => {
           </Social>
           <div className="header-principal">
             <strong>Edson Archela</strong>
-            <span>Acessor de Investimentos - XP Investimentos</span>
+            <span>Assessor de Investimentos - XP Investimentos</span>
           </div>
           <div>
             <a
               className="OpenAccount"
-              href="http://www.xpi.com.br/aai/#/passo/1?assessor-A24771"
+              href="https://cadastro.xpi.com.br/desktop/step/1?assessor=A24771"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -87,7 +95,7 @@ const Header: React.FC = () => {
               <Link to="/about">Sobre mim</Link>
             </li>
             <li>
-              <Link to="/contact">Contate-me</Link>
+              <Link to="/contact">Contatos</Link>
             </li>
           </ul>
         </MenuBar>

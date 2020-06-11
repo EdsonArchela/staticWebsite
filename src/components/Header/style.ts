@@ -14,7 +14,20 @@ export const HeaderLogos = styled.div`
     align-items: center;
     justify-content: space-around;
     img {
-      height: 60px;
+      width: 300px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .header-logo-container {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      img {
+        margin: 10px;
+        height: 20px;
+      }
     }
   }
 `;
@@ -56,6 +69,12 @@ export const HeaderContent = styled.div`
     &:hover {
       background: #9ba78a;
       color: white;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    .header-principal {
+      margin-bottom: 20px;
     }
   }
 `;

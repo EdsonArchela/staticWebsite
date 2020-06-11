@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import logoManhattan from '../../assets/logo-manhattan.png';
+import LogoSchool from '../../assets/logo-school.jpg';
 import logoXP from '../../assets/xp-investimentos-logo.svg';
 import { Container, MenuBar, Social } from './style';
 
@@ -37,6 +38,9 @@ const Footer: React.FC = () => (
         target="_blank"
       >
         <img src={logoManhattan} alt="Manhattan Investimentos" />
+      </a>
+      <a href="https://mhtis.com.br/" rel="noopener noreferrer" target="_blank">
+        <img src={LogoSchool} alt="Manhattan Investiment School" />
       </a>
       <a
         href="https://www.xpi.com.br/"

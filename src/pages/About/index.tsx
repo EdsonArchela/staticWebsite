@@ -13,13 +13,13 @@ const Main: React.FC = () => (
           <p>
             Olá, minha história no mundo dos investimentos teve início durante o
             período em que estava fazendo doutorado na Universidade Estadual de
-            Londrina, na época, também trabalhava como docente neste
+            Londrina, na época, também trabalhava como docente nesta
             instituição. Com o tempo que me sobrava comecei a estudar sobre o
-            mercado financeiro. No ínicio era qualquer outro brasileiro,
+            mercado financeiro. No início era qualquer como outro brasileiro,
             guardava meu suado dinheiro na poupança, que não rendia muito. Logo
             que comecei a aprender sobre o mercado financeiro conheci os
             investimentos do Tesouro Direto, que garantia mais segurança por uma
-            rentabilidade muitas vezes maior. Depois fui me fabiliarizando com
+            rentabilidade muitas vezes maior. Depois fui me familiarizando com
             as nomenclaturas do mercado, como CDI, CDB, SELIC, LCI, LCA etc. Por
             fim, comecei a investir em ações. Um ano depois, estava ajudando a
             gerir o dinheiro de minha família.{' '}

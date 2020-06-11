@@ -1,45 +1,51 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
+/* eslint-disable @typescript-eslint/no-var-requires */
 import React, { BaseHTMLAttributes } from 'react';
-import {
-  FaComment,
-  FaFacebook,
-  FaTwitter,
-  FaPinterest,
-  FaStar,
-} from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaPinterest } from 'react-icons/fa';
+import { useHistory } from 'react-router-dom';
 import Button from '../Button';
 import { Container, Connect } from './styles';
 
-interface Post {
+interface PostProp {
+  folder: string;
   image: string;
   title: string;
-  content: string;
+  description: string;
+  date: string;
 }
 
 type CardProps = BaseHTMLAttributes<HTMLDivElement> & {
-  post: Post;
+  post: PostProp;
 };
 
-const Card: React.FC<CardProps> = ({ children, post, ...rest }) => (
-  <Container>
-    <img src="https://picsum.photos/500/375" alt="#" />
-    <h2>Post Title</h2>
-    <p>{post.content}</p>
-    <div>
-      <Button>LEIA MAIS</Button>
-    </div>
-    <Connect>
-      <div className="info">
-        <p>Maio 10, 2020</p>
-        <FaComment /> <span>0</span>
-        <FaStar /> <span>0</span>
+const Card: React.FC<CardProps> = ({ post }) => {
+  const image = require(`../../assets/articles/${post.folder}/image.jpg`);
+  const history = useHistory();
+  const handleReadMoreClick = (): void => {
+    history.push(`/article/${post.folder}`);
+  };
+
+  return (
+    <Container>
+      <img src={image} alt="#" />
+      <h2>{post.title}</h2>
+      <p>{post.description}</p>
+      <div>
+        <Button onClick={handleReadMoreClick}>LEIA MAIS</Button>
       </div>
-      <div className="social">
-        <FaFacebook />
-        <FaTwitter />
-        <FaPinterest />
-      </div>
-    </Connect>
-  </Container>
-);
+      <Connect>
+        <div className="info">
+          <p>{post.date}</p>
+        </div>
+        <div className="social">
+          <FaFacebook />
+          <FaTwitter />
+          <FaPinterest />
+        </div>
+      </Connect>
+    </Container>
+  );
+};
 
 export default Card;
