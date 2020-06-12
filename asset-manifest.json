@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/staticWebsite/static/js/main.907aa86b.chunk.js",
-    "main.js.map": "/staticWebsite/static/js/main.907aa86b.chunk.js.map",
-    "runtime-main.js": "/staticWebsite/static/js/runtime-main.9bddcef5.js",
-    "runtime-main.js.map": "/staticWebsite/static/js/runtime-main.9bddcef5.js.map",
-    "static/js/2.806177cf.chunk.js": "/staticWebsite/static/js/2.806177cf.chunk.js",
-    "static/js/2.806177cf.chunk.js.map": "/staticWebsite/static/js/2.806177cf.chunk.js.map",
-    "index.html": "/staticWebsite/index.html",
-    "precache-manifest.3d65adc543057b1162051dca989bdddc.js": "/staticWebsite/precache-manifest.3d65adc543057b1162051dca989bdddc.js",
-    "service-worker.js": "/staticWebsite/service-worker.js",
-    "static/js/2.806177cf.chunk.js.LICENSE.txt": "/staticWebsite/static/js/2.806177cf.chunk.js.LICENSE.txt",
-    "static/media/OK8NAL0.jpg": "/staticWebsite/static/media/OK8NAL0.f202f9de.jpg",
-    "static/media/image.jpg": "/staticWebsite/static/media/image.e01940f8.jpg",
-    "static/media/logo-manhattan.svg": "/staticWebsite/static/media/logo-manhattan.2bef2387.svg",
-    "static/media/logo-school.jpg": "/staticWebsite/static/media/logo-school.14eb51f1.jpg",
-    "static/media/logo-xpi.svg": "/staticWebsite/static/media/logo-xpi.b8fe48b5.svg",
-    "static/media/main-post-background.jpg": "/staticWebsite/static/media/main-post-background.e53ab4eb.jpg",
-    "static/media/xp-investimentos-logo.svg": "/staticWebsite/static/media/xp-investimentos-logo.3b782706.svg"
+    "main.js": "/static/js/main.907aa86b.chunk.js",
+    "main.js.map": "/static/js/main.907aa86b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8c40394c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8c40394c.js.map",
+    "static/js/2.a768e51e.chunk.js": "/static/js/2.a768e51e.chunk.js",
+    "static/js/2.a768e51e.chunk.js.map": "/static/js/2.a768e51e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ebecb433056304a875f763c67cc062c1.js": "/precache-manifest.ebecb433056304a875f763c67cc062c1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.a768e51e.chunk.js.LICENSE.txt": "/static/js/2.a768e51e.chunk.js.LICENSE.txt",
+    "static/media/OK8NAL0.jpg": "/static/media/OK8NAL0.f202f9de.jpg",
+    "static/media/image.jpg": "/static/media/image.e01940f8.jpg",
+    "static/media/logo-manhattan.svg": "/static/media/logo-manhattan.2bef2387.svg",
+    "static/media/logo-school.jpg": "/static/media/logo-school.14eb51f1.jpg",
+    "static/media/logo-xpi.svg": "/static/media/logo-xpi.b8fe48b5.svg",
+    "static/media/main-post-background.jpg": "/static/media/main-post-background.e53ab4eb.jpg",
+    "static/media/xp-investimentos-logo.svg": "/static/media/xp-investimentos-logo.3b782706.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bddcef5.js",
-    "static/js/2.806177cf.chunk.js",
+    "static/js/runtime-main.8c40394c.js",
+    "static/js/2.a768e51e.chunk.js",
     "static/js/main.907aa86b.chunk.js"
   ]
 }
