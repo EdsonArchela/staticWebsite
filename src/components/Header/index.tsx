@@ -68,8 +68,10 @@ const Header: React.FC = () => {
             </a>
           </Social>
           <div className="header-principal">
-            <strong>Edson Archela</strong>
-            <span>Assessor de Investimentos - XP Investimentos</span>
+            <Link to="/about">
+              <strong>Edson Archela</strong>
+              <span>Assessor de Investimentos - XP Investimentos</span>
+            </Link>
           </div>
           <div>
             <a

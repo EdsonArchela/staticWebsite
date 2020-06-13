@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Body } from './style';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import meImg from '../../assets/0.jpg';
 
 const Main: React.FC = () => (
   <>
@@ -9,6 +10,7 @@ const Main: React.FC = () => (
     <Container>
       <Body>
         <section className="content">
+          <img src={meImg} alt="" />
           <h1>Edson Archela</h1>
           <p>
             Olá, minha história no mundo dos investimentos teve início durante o

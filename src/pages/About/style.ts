@@ -17,6 +17,10 @@ export const Body = styled.div`
     justify-content: center;
     padding: 70px;
     max-width: 1020px;
+    img {
+      width: 200px;
+      border-radius: 50%;
+    }
     h1 {
       max-width: 500px;
       text-align: center;

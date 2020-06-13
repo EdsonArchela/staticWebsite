@@ -23,10 +23,11 @@ export const HeaderLogos = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-around;
-      flex-direction: column;
+      /* flex-direction: column; */
       img {
         margin: 10px;
         height: 20px;
+        width: 100px;
       }
     }
   }
@@ -42,16 +43,21 @@ export const HeaderContent = styled.div`
   border-bottom: 1px solid #d9d9d9;
   .header-principal {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    strong {
-      font-weight: bolder;
-      font-size: 30px;
-    }
-    span {
-      color: #68686d;
+
+    a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      strong {
+        font-weight: bolder;
+        font-size: 30px;
+      }
+      span {
+        color: #68686d;
+      }
     }
   }
 
