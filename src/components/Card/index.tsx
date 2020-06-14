@@ -2,7 +2,14 @@
 /* eslint-disable global-require */
 /* eslint-disable @typescript-eslint/no-var-requires */
 import React, { BaseHTMLAttributes } from 'react';
-import { FaFacebook, FaTwitter, FaPinterest } from 'react-icons/fa';
+import {
+  TwitterShareButton,
+  TwitterIcon,
+  PinterestShareButton,
+  PinterestIcon,
+  FacebookShareButton,
+  FacebookIcon,
+} from 'react-share';
 import { useHistory } from 'react-router-dom';
 import Button from '../Button';
 import { Container, Connect } from './styles';
@@ -39,9 +46,28 @@ const Card: React.FC<CardProps> = ({ post }) => {
           <p>{post.date}</p>
         </div>
         <div className="social">
-          <FaFacebook />
-          <FaTwitter />
-          <FaPinterest />
+          <FacebookShareButton
+            url={`archelainvest.com.br/#/article/${post.folder}`}
+            quote={post.title}
+            className="Demo__some-network__share-button"
+          >
+            <FacebookIcon size={18} round />
+          </FacebookShareButton>
+
+          <TwitterShareButton
+            url={`archelainvest.com.br/#/article/${post.folder}`}
+            title={post.title}
+            className="Demo__some-network__share-button"
+          >
+            <TwitterIcon size={18} round />
+          </TwitterShareButton>
+          <PinterestShareButton
+            url={`archelainvest.com.br/#/article/${post.folder}`}
+            media={`archelainvest.com.br/${image}`}
+            className="Demo__some-network__share-button"
+          >
+            <PinterestIcon size={18} round />
+          </PinterestShareButton>
         </div>
       </Connect>
     </Container>

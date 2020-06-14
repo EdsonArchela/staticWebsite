@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import backgroundImage from '../../assets/main-post-background.jpg';
 
 export const Container = styled.div`
   max-width: 1120px;
