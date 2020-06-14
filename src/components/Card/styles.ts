@@ -47,10 +47,4 @@ export const Connect = styled.div`
       color: #9ba78a;
     }
   }
-
-  .social {
-    svg {
-      margin-left: 10px;
-    }
-  }
 `;

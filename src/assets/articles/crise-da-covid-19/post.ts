@@ -39,7 +39,7 @@ dinheiro e construir um patrimônio para sua aposentadoria.
 </p>
 <h2>Um exemplo prático:</h2>
 <p>
-Suponde que sua família precise de R$ 4 mil mensais para se manter, vocês
+Supondo que sua família precise de R$ 4 mil mensais para se manter, vocês
 precisarão de R$ 24 mil para a reserva de emergência, que pode ser construída
 poupando 500 reais por 48 meses, por exemplo.
 </p>

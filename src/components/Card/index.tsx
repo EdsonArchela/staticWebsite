@@ -2,18 +2,10 @@
 /* eslint-disable global-require */
 /* eslint-disable @typescript-eslint/no-var-requires */
 import React, { BaseHTMLAttributes } from 'react';
-import {
-  TwitterShareButton,
-  TwitterIcon,
-  PinterestShareButton,
-  PinterestIcon,
-  FacebookShareButton,
-  FacebookIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
-} from 'react-share';
+
 import { useHistory } from 'react-router-dom';
 import Button from '../Button';
+import SocialShare from '../SocialShare';
 import { Container, Connect } from './styles';
 
 interface PostProp {
@@ -47,36 +39,7 @@ const Card: React.FC<CardProps> = ({ post }) => {
         <div className="info">
           <p>{post.date}</p>
         </div>
-        <div className="social">
-          <FacebookShareButton
-            url={`archelainvest.com.br/#/article/${post.folder}`}
-            quote={post.title}
-            className="Demo__some-network__share-button"
-          >
-            <FacebookIcon size={18} round />
-          </FacebookShareButton>
-
-          <TwitterShareButton
-            url={`archelainvest.com.br/#/article/${post.folder}`}
-            title={post.title}
-            className="Demo__some-network__share-button"
-          >
-            <TwitterIcon size={18} round />
-          </TwitterShareButton>
-          <PinterestShareButton
-            url={`archelainvest.com.br/#/article/${post.folder}`}
-            media={`archelainvest.com.br/${image}`}
-            className="Demo__some-network__share-button"
-          >
-            <PinterestIcon size={18} round />
-          </PinterestShareButton>
-          <WhatsappShareButton
-            url={`archelainvest.com.br/#/article/${post.folder}`}
-            title={post.title}
-          >
-            <WhatsappIcon size={18} round />
-          </WhatsappShareButton>
-        </div>
+        <SocialShare folder={post.folder} title={post.title} size={20} />
       </Connect>
     </Container>
   );

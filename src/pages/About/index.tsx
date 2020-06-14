@@ -17,7 +17,7 @@ const Main: React.FC = () => (
             período em que estava fazendo doutorado na Universidade Estadual de
             Londrina, na época, também trabalhava como docente nesta
             instituição. Com o tempo que me sobrava comecei a estudar sobre o
-            mercado financeiro. No início era qualquer como outro brasileiro,
+            mercado financeiro. No início era como a maioria dos brasileiro,
             guardava meu suado dinheiro na poupança, que não rendia muito. Logo
             que comecei a aprender sobre o mercado financeiro conheci os
             investimentos do Tesouro Direto, que garantia mais segurança por uma

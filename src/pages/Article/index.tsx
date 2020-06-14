@@ -4,9 +4,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
+import '../../index.d';
+import MetaTags from 'react-meta-tags';
+
 import { Container } from './style';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SocialShare from '../../components/SocialShare';
 
 const Article: React.FC = () => {
   const { slug } = useParams();
@@ -15,12 +19,22 @@ const Article: React.FC = () => {
     .default;
 
   const image = require(`../../assets/articles/${slug}/image.jpg`);
+
+  const content = ReactHtmlParser(input);
+
+  const title = content[0].props.children[0];
+
   return (
     <>
+      <MetaTags>
+        <title>{title}</title>
+        <meta name="description" content={content[1].props.children[0]} />
+      </MetaTags>
       <Header />
       <Container>
         <img src={image} alt={slug} />
-        <div>{ReactHtmlParser(input)}</div>
+        <SocialShare folder={slug} title={title} size={32} />
+        <div>{content}</div>
         {/* <Markdown source={input} /> */}
       </Container>
       <Footer />
