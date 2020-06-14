@@ -9,6 +9,8 @@ import {
   PinterestIcon,
   FacebookShareButton,
   FacebookIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
 } from 'react-share';
 import { useHistory } from 'react-router-dom';
 import Button from '../Button';
@@ -68,6 +70,12 @@ const Card: React.FC<CardProps> = ({ post }) => {
           >
             <PinterestIcon size={18} round />
           </PinterestShareButton>
+          <WhatsappShareButton
+            url={`archelainvest.com.br/#/article/${post.folder}`}
+            title={post.title}
+          >
+            <WhatsappIcon size={18} round />
+          </WhatsappShareButton>
         </div>
       </Connect>
     </Container>
