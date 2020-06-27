@@ -1,11 +1,12 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
 /* eslint-disable @typescript-eslint/no-var-requires */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
 import '../../index.d';
 import MetaTags from 'react-meta-tags';
+import ReactGa from 'react-ga';
 
 import { Container } from './style';
 import Header from '../../components/Header';
@@ -23,6 +24,10 @@ const Article: React.FC = () => {
   const content = ReactHtmlParser(input);
 
   const title = content[0].props.children[0];
+
+  useEffect(() => {
+    ReactGa.pageview(`/post/${slug}`);
+  }, [slug]);
 
   return (
     <>

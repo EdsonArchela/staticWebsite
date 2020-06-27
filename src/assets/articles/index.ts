@@ -1,5 +1,21 @@
 export const posts = [
   {
+    folder: 'tesouro-direto',
+    image: 'image.jpg',
+    title: 'Tesouro Direto. O que é?',
+    description:
+      'Tesouro Direto é um programa do Governo Federal implantado em 2002 através de uma parceria entre o Tesouro Nacional e a B3 (antiga BM&FBovespa).  Atualmente, é um dos investimentos mais populares do Brasil. O objetivo desse programa é facilitar o acesso de pessoas físicas a investimentos em títulos públicos por meio da internet.',
+    date: 'Junho 16, 2020',
+  },
+  {
+    folder: 'renda-fixa-101',
+    image: 'image.jpg',
+    title: 'Renda Fixa 101- O que é Renda Fixa?',
+    description:
+      'Seja no banco ou em uma corretora de valores mobiliários você irá se deparar com uma sopa de letrinhas, CDI, CDB, LCI, LCA. Neste artigo vamos explicar um pouco de cada um destes produtos de renda.',
+    date: 'Junho 15, 2020',
+  },
+  {
     folder: 'crise-da-covid-19',
     image: 'image.jpg',
     title:

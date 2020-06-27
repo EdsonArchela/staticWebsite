@@ -67,7 +67,14 @@ const Footer: React.FC = () => (
       </ul>
     </MenuBar>
     <div className="copyright-container">
-      <span>Powered by</span> TechArc Websites
+      <span>Powered by</span>{' '}
+      <a
+        href="https://github.com/EdsonArchela"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        TechArc Websites
+      </a>
     </div>
   </Container>
 );

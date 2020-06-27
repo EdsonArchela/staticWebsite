@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGa from 'react-ga';
+
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { Container, Posts } from './style';
@@ -15,6 +17,9 @@ interface Post {
 
 const Articles: React.FC = () => {
   const posts: Post[] = postsList;
+  useEffect(() => {
+    ReactGa.pageview('/articles');
+  }, []);
   return (
     <>
       <Header />
