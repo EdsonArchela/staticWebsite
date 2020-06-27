@@ -1,5 +1,5 @@
 export default `
-<h1>Previdência Privada- Plano de previdência e fundos de previdência</h1>
+<h1>Previdência Privada- Plano de Previdência e Fundos de Previdência</h1>
 
 <p>
   Previdência privada é um plano de investimento voltado para a aposentadoria.
