@@ -1,5 +1,13 @@
 export const posts = [
   {
+    folder: 'previdencia',
+    image: 'image.jpg',
+    title: 'Previdência Privada- Plano de previdência e fundos de previdência',
+    description:
+      'Previdência privada é um plano de investimento voltado para a aposentadoria. Nessa modalidade de investimento, pode-se contribuir mensal ou apenas algumas vezes no ano e o resgate pode ser feito de uma só vez ou de forma parcelada como uma renda mensal. Ficou interessado em poupar para a aposentadoria com uma aplicação especialmente desenhada para isso? Veja como os fundos de previdência funcionam.',
+    date: 'Junho 27, 2020',
+  },
+  {
     folder: 'tesouro-direto',
     image: 'image.jpg',
     title: 'Tesouro Direto. O que é?',
