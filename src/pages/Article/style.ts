@@ -26,7 +26,7 @@ export const Post = styled.article`
   p {
     line-height: 1.5em;
     text-align: justify;
-    text-indent: 1.5em;
+    text-indent: 2em;
   }
 
   ul {

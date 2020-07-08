@@ -1,5 +1,14 @@
 export const posts = [
   {
+    folder: 'ipo',
+    image: 'image.jpg',
+    title:
+      'O que é IPO?  Conheça as vantagens de investir em um IPO e os passos necessários para participar desse tipo de investimento.',
+    description:
+      'Os IPOs  são conhecidos no Brasil como oferta pública inicial. É o processo pelo qual uma empresa emite ações a fim de captar recursos para financiar seus investimentos. Por mais que ações de ofertas públicas sejam investimentos de maior risco, também trazem possibilidades de lucro. Se você ficou interessado em participar de um IPO, confira o passo a passo apresentado a seguir.',
+    date: 'Julho 08, 2020',
+  },
+  {
     folder: 'ipca+',
     image: 'image.jpg',
     title: 'Títulos atrelados à inflação - Vantagens e Desvantagens',
