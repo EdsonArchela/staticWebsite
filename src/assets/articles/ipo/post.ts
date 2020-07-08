@@ -3,6 +3,7 @@ export default `
   O que é IPO? Conheça as vantagens de investir em um IPO e os passos
   necessários para participar desse tipo de investimento
 </h1>
+
 <p>Os IPOs são conhecidos no Brasil como oferta pública inicial. É o processo
   pelo qual uma empresa emite ações a fim de captar recursos para financiar seus
   investimentos. Por mais que ações de ofertas públicas sejam investimentos de
@@ -101,7 +102,7 @@ export default `
 <h3><b>1. Abra conta em uma corretora</b></h3>
 <p>
   As corretoras de valores são as instituições que fazem a intermediação dos
-  negócios na bolsa de valores. Elas também são as responsáveis pela
+  negócios na Bolsa de Valores. Elas também são as responsáveis pela
   distribuição das ações vendidas durante os IPOs.
 </p>
 <h3>
@@ -129,7 +130,7 @@ export default `
 <h3><b>4. Defina o valor que pretende aplicar e realize o pagamento.</b></h3>
 <p>
   Através da demanda, é calculada a quantidade de ações que você poderá adquirir
-  com seu investimento. Quando o processo de for finalizado, você será informado
+  com seu investimento. Quando o processo de compra for finalizado, você será informado
   sobre o preço final dos papéis e também sobre a quantidade que conseguirá
   adquirir. Transfira os recursos para sua conta para que o pagamento aconteça.
 </p>
