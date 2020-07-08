@@ -17,7 +17,7 @@ export const Post = styled.article`
 
   img {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
   h1,
   h2 {
@@ -26,6 +26,7 @@ export const Post = styled.article`
   p {
     line-height: 1.5em;
     text-align: justify;
+    text-indent: 1.5em;
   }
 
   ul {

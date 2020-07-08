@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import {
   Container,
   HeaderContent,
@@ -88,16 +88,24 @@ const Header: React.FC = () => {
         <MenuBar>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink exact activeClassName="active" to="/">
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/articles">Artigos</Link>
+              <NavLink activeClassName="active" to="/articles">
+                Artigos
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">Sobre mim</Link>
+              <NavLink activeClassName="active" to="/about">
+                Sobre mim
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">Contatos</Link>
+              <NavLink activeClassName="active" to="/contact">
+                Contatos
+              </NavLink>
             </li>
           </ul>
         </MenuBar>

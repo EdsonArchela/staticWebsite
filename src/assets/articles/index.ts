@@ -1,5 +1,13 @@
 export const posts = [
   {
+    folder: 'ipca+',
+    image: 'image.jpg',
+    title: 'Títulos atrelados à inflação - Vantagens e Desvantagens',
+    description:
+      'A maioria dos títulos atrelados à inflação, sejam eles oferecidos pelo tesouro nacional ou de crédito privado, costumam ter duas componentes, uma pós-fixada e outra prefixada. Interessado? Veja neste artigo as vantagens e desvantagens deste tipo de produto.',
+    date: 'Julho 01, 2020',
+  },
+  {
     folder: 'previdencia',
     image: 'image.jpg',
     title: 'Previdência Privada- Plano de Previdência e Fundos de Previdência',

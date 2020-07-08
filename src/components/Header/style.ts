@@ -120,10 +120,12 @@ export const MenuBar = styled.nav`
     li {
       border-bottom: 1px solid transparent;
       transition: border-bottom 0.2s;
-      &:hover {
+      &:hover,
+      > a.active {
         border-bottom: 1px solid #9ba78a;
       }
     }
+
     a {
       font-size: 18px;
       color: black;
@@ -132,6 +134,9 @@ export const MenuBar = styled.nav`
       &:hover {
         color: #9ba78a;
       }
+    }
+    .active {
+      color: #9ba78a;
     }
   }
 `;

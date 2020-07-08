@@ -45,6 +45,10 @@ const Article: React.FC = () => {
       <MetaTags>
         <title>{title}</title>
         <meta name="description" content={content[1].props.children[0]} />
+        <meta name="og:image" content={image} />
+        <meta name="og:image:type" content="image/jpg" />
+        <meta name="og:image:width" content="1024" />
+        <meta name="og:image:height" content="1024" />
       </MetaTags>
       <Header />
       <Container>
