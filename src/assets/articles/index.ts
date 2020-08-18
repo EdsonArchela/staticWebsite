@@ -1,5 +1,13 @@
 export const posts = [
   {
+    folder: 'smallcaps',
+    image: 'image.jpg',
+    title: 'Small Caps – preparado para investir?',
+    description:
+      'Quem acompanha o mercado de ações, certamente já ouviu falar das small caps ou ações de empresas com menor valor de mercado. Mas se você ainda desconhece o termo, isso não significa que essas ações não sejam atrativas. Elas podem oferecer retornos muito altos, embora também ofereçam maior risco para isso.\n Interessou? Faça a leitura e se restar alguma dúvida é só falar com um Assessor de Investimentos.',
+    date: 'Agosto 18, 2020',
+  },
+  {
     folder: 'ipo',
     image: 'image.jpg',
     title:

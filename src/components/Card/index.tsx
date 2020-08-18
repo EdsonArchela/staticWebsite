@@ -21,7 +21,7 @@ type CardProps = BaseHTMLAttributes<HTMLDivElement> & {
 };
 
 const Card: React.FC<CardProps> = ({ post }) => {
-  const image = require(`../../assets/articles/${post.folder}/image.jpg`);
+  const image = require(`../../assets/articles/${post.folder}/${post.image}`);
   const history = useHistory();
   const handleReadMoreClick = (): void => {
     history.push(`/article/${post.folder}`);
